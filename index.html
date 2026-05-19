@@ -1,0 +1,172 @@
+Here's the HTML code for your interactive pitch deck:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerai - Voice-Activated Virtual Supermarket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="deck-container">
+        <!-- Slide Navigation -->
+        <div class="slide-nav">
+            <button class="nav-btn prev-btn" onclick="prevSlide()">❮</button>
+            <div class="slide-indicator">
+                <span class="current-slide">1</span> / <span class="total-slides">12</span>
+            </div>
+            <button class="nav-btn next-btn" onclick="nextSlide()">❯</button>
+        </div>
+
+        <!-- Slides -->
+        <div class="slides">
+            <!-- Cover Slide -->
+            <section class="slide active" id="cover">
+                <div class="slide-content">
+                    <div class="logo">GERAI</div>
+                    <h1>Voice-Activated Virtual Supermarket</h1>
+                    <p class="subtitle">Empowering Traditional Market Vendors Through Voice Technology</p>
+                    <div class="cta">
+                        <p>Press → to continue</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hook Slide -->
+            <section class="slide" id="hook">
+                <div class="slide-content">
+                    <h2>The Digital Divide in Traditional Markets</h2>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">40%</div>
+                            <div class="stat-desc">of small vendors in SEA lack digital skills</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">14.7%</div>
+                            <div class="stat-desc">CAGR growth of e-commerce (2023-2030)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">30%</div>
+                            <div class="stat-desc">of vendor revenue lost to digital platforms</div>
+                        </div>
+                    </div>
+                    <p class="source">Sources: World Bank 2022, Statista 2023</p>
+                </div>
+            </section>
+
+            <!-- Problem Slide -->
+            <section class="slide" id="problem">
+                <div class="slide-content">
+                    <h2>The Challenge for Traditional Vendors</h2>
+                    <div class="problem-container">
+                        <div class="problem-card">
+                            <div class="icon">📉</div>
+                            <h3>Declining Revenue</h3>
+                            <p>60% report losing customers to e-commerce platforms</p>
+                        </div>
+                        <div class="problem-card">
+                            <div class="icon">📱</div>
+                            <h3>Complex Interfaces</h3>
+                            <p>Existing apps require typing and complex navigation</p>
+                        </div>
+                        <div class="problem-card">
+                            <div class="icon">🚚</div>
+                            <h3>High Logistics Costs</h3>
+                            <p>Up to 30% of product value spent on last-mile delivery</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Solution Slide -->
+            <section class="slide" id="solution">
+                <div class="slide-content">
+                    <h2>Gerai's Voice-First Solution</h2>
+                    <div class="solution-features">
+                        <div class="feature">
+                            <div class="feature-icon">🎙️</div>
+                            <div class="feature-text">
+                                <h3>Voice-Activated Interface</h3>
+                                <p>Manage inventory and process orders with simple voice commands in local languages</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">🤝</div>
+                            <div class="feature-text">
+                                <h3>Hyper-Local Delivery Network</h3>
+                                <p>Group products with nearby sellers to reduce logistics costs by 50%</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">🎓</div>
+                            <div class="feature-text">
+                                <h3>In-App Training</h3>
+                                <p>Voice-guided tutorials help vendors adapt to digital tools</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Product Slide -->
+            <section class="slide" id="product">
+                <div class="slide-content">
+                    <h2>Gerai Product Features</h2>
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <h3>Voice Commands</h3>
+                            <p>"Add 10 kg rice to inventory"</p>
+                            <p>"Check today's orders"</p>
+                        </div>
+                        <div class="product-card">
+                            <h3>Offline Mode</h3>
+                            <p>Works without internet, syncs when connected</p>
+                        </div>
+                        <div class="product-card">
+                            <h3>Bundled Delivery</h3>
+                            <p>Combine orders with nearby vendors</p>
+                        </div>
+                        <div class="product-card">
+                            <h3>Cash Tracking</h3>
+                            <p>Manage COD payments digitally</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Market Slide -->
+            <section class="slide" id="market">
+                <div class="slide-content">
+                    <h2>Target Market: Indonesia</h2>
+                    <div class="market-stats">
+                        <div class="market-stat">
+                            <h3>26M</h3>
+                            <p>Traditional Vendors</p>
+                        </div>
+                        <div class="market-stat">
+                            <h3>37%</h3>
+                            <p>of National Retail Sales</p>
+                        </div>
+                        <div class="market-stat">
+                            <h3>73%</h3>
+                            <p>Smartphone Penetration</p>
+                        </div>
+                    </div>
+                    <div class="cities">
+                        <h3>Initial Focus Cities:</h3>
+                        <div class="city-tags">
+                            <span>Jakarta</span>
+                            <span>Surabaya</span>
+                            <span>Bandung</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Revenue Model Slide -->
+            <section class="slide" id="revenue">
+                <div class="slide-content">
+                    <h2>Revenue Streams</h2>
+                    <div class="revenue-model">
